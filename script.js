@@ -1,6 +1,6 @@
 // Interaction : Bouton message surprise
 document.getElementById("btnMessage").addEventListener("click", function() {
-    alert("🚀 Merci de visiter ma page !");
+    alert("🚀 Merci d'avoir visiter ma page !");
 });
 
 // Optionnel : Animation au survol des sections

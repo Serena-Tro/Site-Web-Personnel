@@ -1,49 +1,55 @@
-html
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Page Personnelle</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav class="navbar">
-        <a href="#about">À propos</a>
-        <a href="#passion">Ma passion</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="script.js">
+  <title>Page Personnelle</title>
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
     
-    <div class="container">
-        <header>Bienvenue sur mon site personnel</header>
-        
-        <section id="about">
-            <h2>À propos de moi</h2>
-            <p>Je m'appelle Serge Serena TRO, je suis étudiante en Réseaux et Sécurité Informatique et passionnée par le numérique.</p>
-        </section>
-        
-        <section id="passion">
-            <h2>Ma Passion</h2>
-            <p>J'adore apprendre à coder et explorer le monde de la technologie. Mon objectif est de créer des projets innovants.</p>
-        </section>
-        
-        <section>
-            <h2>Interactivité</h2>
-            <button onclick="afficherMessage()">Clique-moi !</button>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Tu peux me contacter à l'adresse email : mainseutro@mail.com</p>
-        </section>
-        
-        <footer>© 2025 - Mon site personnel</footer>
-    </div>
+    </head>
+<body>
+  <nav class="navbar">
+    <a href="#about">À propos</a>
+    <a href="#passion">Ma passion</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <script>
-        function afficherMessage() {
-            alert("Merci d'avoir visité ma page !");
-        }
-    </script>
+<div class="container">
+    <header>Bienvenue sur mon site personnel</header>
+    
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <img src="images/Etudiante.avif" alt="Mon image" style="border-radius: 10%; margin-bottom: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+        <p>Je m'appelle Serge Serena TRO, je suis étudiante en Réseaux et Sécurité Informatique à l'université virtuelle de Côte d'Ivoire. Je vis à abengourou une ville de l'intérieur et je suis passionnée par la programmation.</p>
+    </section>
+    
+    <section id="passion">
+        <h2>Ma Passion</h2>
+        <img src="images/developpement.avif" alt="Passion" style="border-radius: 10px; margin-bottom: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+        <p>J'ai découvert ma passion pour la programmation très jeune, lors de ma participation à un camp STEM au cours du quel j'ai appris à programmer avec l'outil SCRATCH. Une fois à l'université, j'ai commencé à chercher des formations pratiques pour transformer cette passion en métier. Cependant, après ces formations, je restais toujours sur ma faim. J'espère donc être retenue pour cette formation avec SIMPLON CI afin de réaliser ce rêve.  </p>
+    </section>
+    
+    <section>
+        <h2>Message De Remerciement</h2>
+        <p>Cliquez sur le bouton ci-dessous pour voir un gentil message !</p>
+        <button onclick="afficherMessage()">Clique-moi !</button>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Contactez moi à l'adresse email ou au numéro de téléphone suivant : mainseutro@gmail.com / 0502447742</p>
+    </section>
+    
+    <footer>© 2025 - Mon site personnel</footer>
+</div>
+
+<script>
+    function afficherMessage() {
+        alert("Merci d'avoir visité ma page !");
+    }
+</script>
 </body>
 </html>
